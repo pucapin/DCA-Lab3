@@ -1,0 +1,49 @@
+.amiibo {
+    width: 250px;
+    height: 280px;
+    border: 2px solid rgb(241, 105, 42);
+    border-radius: 20px;
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 13%, rgba(245,248,249,1) 41%, rgba(255,173,122,0.4374124649859944) 84%);
+    
+    
+}
+#img {
+    object-fit: contain;
+    height: 200px;
+    width: 200px;
+
+}
+#img:hover {
+    object-fit: contain;
+    height: 200px;
+    width: 200px;
+    filter: drop-shadow(0 0 0.45rem #ffde97);
+}
+
+.name-contain {
+    background-color: rgb(255, 205, 195);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(34, 31, 31);
+    font-weight: 500;
+    border-radius: 20px;
+    margin: 4px;
+    height: 30px;
+}
+.game-contain {
+    background-color: rgb(255, 178, 115);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(34, 31, 31);    font-weight: 400;
+    border-radius: 20px;
+    margin: 4px;
+    height: 30px;
+    position: relative;
+}
+#bot {
+    position: absolute;
+    bottom: 0;
+}
