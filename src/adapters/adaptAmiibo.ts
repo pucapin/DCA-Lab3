@@ -6,6 +6,9 @@ interface RawAmiibo {
     head: string;
     image: string;
     name: string;
+    release: {
+      jp: string
+    }
     tail: string;
     type: string;
     
@@ -15,24 +18,34 @@ interface RawAmiibo {
     amiibo: RawAmiibo[];
   }
   
-  interface AmiiboStructure {
+  export interface AmiiboStructure {
     name: string;
     image: string;
     game: string;
     id: string;
+    release: {
+      jp?: string
+    }
   }
-  interface DetailStructure {
+  export interface DetailStructure {
     name: string;
     image: string;
     game: string;
     character: string;
+    release: {
+      jp: string;
+    }
   }
   export function adaptAmiibo(singleAmiibo: RawAmiibo): AmiiboStructure {
     return {
       name: singleAmiibo.name,
       image: singleAmiibo.image,
       game: singleAmiibo.gameSeries,
-      id: singleAmiibo.head + singleAmiibo.tail
+      id: singleAmiibo.head + singleAmiibo.tail,
+      release: {
+        jp: singleAmiibo.release.jp
+      }
+      
     };
   }
   
@@ -47,6 +60,9 @@ interface RawAmiibo {
       name: detailAmiibo.name,
       image: detailAmiibo.image,
       game: detailAmiibo.gameSeries,
-      character: detailAmiibo.character
+      character: detailAmiibo.character,
+      release: {
+        jp: detailAmiibo.release.jp
+      }
     }
   }
