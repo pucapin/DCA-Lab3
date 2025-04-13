@@ -1,8 +1,8 @@
 import getData from "../services/getData";
 import { apiToAmiibo } from "../adapters/adaptAmiibo";
-import { DetailStructure } from "../adapters/adaptAmiibo";
 import { AmiiboDetails } from "./amiiboDetail";
-import { AmiiboStructure } from "../adapters/adaptAmiibo";
+import { AmiiboStructure } from "../Types";
+import { DetailStructure } from "../Types";
 
 class AmiiboList extends HTMLElement {
     constructor() {

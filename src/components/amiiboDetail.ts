@@ -1,13 +1,9 @@
-import { DetailStructure } from "../adapters/adaptAmiibo";
-
+import { DetailStructure } from "../Types";
 class AmiiboDetails extends HTMLElement {
     data!: DetailStructure;
-    amiiboID!: string
     constructor() {
         super();
         this.attachShadow({ mode: "open" });
-        
-
     }
     connectedCallback() {
         this.render()

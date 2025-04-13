@@ -1,4 +1,3 @@
-
 async function getDetail(id:any) {
     return fetch(`https://www.amiiboapi.com/api/amiibo/?id=${id}`)
     .then(function (response) {
