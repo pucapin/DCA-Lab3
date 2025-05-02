@@ -1,4 +1,7 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:  #212121;
+   font-family: "Balsamiq Sans", sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: rgb(54, 24, 24);
 }

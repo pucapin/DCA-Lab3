@@ -1,7 +1,11 @@
-import { AmiiboCard } from "./components/amiiboCard";
-import { AmiiboList } from "./components/amiiboList";
-import { AmiiboDetails } from "./components/amiiboDetail";
-customElements.define('amiibo-card', AmiiboCard);
-customElements.define('amiibo-list', AmiiboList);
-customElements.define('amiibo-detail', AmiiboDetails);
+import AppContain from "./pages/Root";
+import PairsRender from "./components/pairsRender";
+import FightPairs from "./components/fightPairs";
+import Results from "./components/resultsComp";
+import ResultCard from "./components/resultCard";
 
+customElements.define("app-contain", AppContain);
+customElements.define("pairs-render", PairsRender);
+customElements.define("fight-pair", FightPairs);
+customElements.define("results-render", Results);
+customElements.define("result-card", ResultCard)

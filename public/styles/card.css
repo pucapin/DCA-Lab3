@@ -1,0 +1,81 @@
+.fight-card {
+    width: 500px;
+    height: 300px;
+    background-color: lightpink;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+.fighter {
+    height: 160px;
+    width: auto;
+    object-fit: contain;
+}
+
+.fighter1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.fighter2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#vote1 {
+    transition: all 1s;
+    width: 200px;
+    height: 32px;
+    border: none;
+    background-color: beige;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Balsamiq Sans", sans-serif;
+
+
+}
+
+#vote2 {
+    transition: all 1s;
+    width: 200px;
+    height: 32px;
+    border: none;
+    background-color: beige;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 600;
+}
+
+#vote2:hover:enabled {
+    transition: all 1s;
+    width: 200px;
+    height: 33px;
+    border: none;
+    background-color: lightcoral;
+    color:white;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+#vote1:hover:enabled {
+    transition: all 1s;
+    width: 200px;
+    height: 33px;
+    border: none;
+    background-color: lightcoral;
+    color:white;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Balsamiq Sans", sans-serif;
+
+}
